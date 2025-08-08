@@ -9,6 +9,15 @@ git clone https://github.com/AIFSH/QwenImage-Diffsynth
 cd QwenImage-Diffsynth
 pip install -r requirements.txt
 ```
+
+视频教程
+
+[Eligen自由画布工作流 | 画布的每一个角落都能妙笔生花](https://www.bilibili.com/video/BV18Ft4zLETY)
+
+一键使用
+
+[Eligen自由画布工作流48GB显存版要点“运行Plus” ](https://www.runninghub.cn/post/1953929861947805698/?inviteCode=3487e1be)
+
 ## My other repo
 [a ComfyUI custom node for Qwen-Image,surpport VARM >=8GB](https://github.com/AIFSH/QwenImage-ComfyUI)
 
