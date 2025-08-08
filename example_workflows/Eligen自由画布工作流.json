@@ -1,0 +1,1025 @@
+{
+  "id": "e7632ee1-574c-47c8-bf9b-1bb033cf272a",
+  "revision": 0,
+  "last_node_id": 34,
+  "last_link_id": 44,
+  "nodes": [
+    {
+      "id": 23,
+      "type": "MaskToImage",
+      "pos": [
+        7.841570854187012,
+        176.7764434814453
+      ],
+      "size": [
+        140,
+        26
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 22
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            23
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskToImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 21,
+      "type": "LoadImage",
+      "pos": [
+        -317,
+        659
+      ],
+      "size": [
+        270,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            24
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "clipspace/clipspace-mask-697714.7999999999.png [input]",
+        "image"
+      ]
+    },
+    {
+      "id": 24,
+      "type": "MaskToImage",
+      "pos": [
+        18.731599807739258,
+        695.866455078125
+      ],
+      "size": [
+        140,
+        26
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 24
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            25
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskToImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 18,
+      "type": "LoadImage",
+      "pos": [
+        -414.50714111328125,
+        158.11798095703125
+      ],
+      "size": [
+        354,
+        326
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            22
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "clipspace/clipspace-mask-584981.6.png [input]",
+        "image"
+      ]
+    },
+    {
+      "id": 17,
+      "type": "SetEligenArgs",
+      "pos": [
+        -346,
+        12.690001487731934
+      ],
+      "size": [
+        356.8287048339844,
+        78
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "IMAGE",
+          "link": 23
+        }
+      ],
+      "outputs": [
+        {
+          "name": "eligen_args",
+          "type": "EligenArgs",
+          "links": [
+            15
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SetEligenArgs"
+      },
+      "widgets_values": [
+        "Eligen自由画布工作流"
+      ]
+    },
+    {
+      "id": 20,
+      "type": "SetEligenArgs",
+      "pos": [
+        -336,
+        536
+      ],
+      "size": [
+        356.8287048339844,
+        78
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "IMAGE",
+          "link": 25
+        }
+      ],
+      "outputs": [
+        {
+          "name": "eligen_args",
+          "type": "EligenArgs",
+          "links": [
+            19
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SetEligenArgs"
+      },
+      "widgets_values": [
+        "基于Qwen-Image"
+      ]
+    },
+    {
+      "id": 29,
+      "type": "MaskToImage",
+      "pos": [
+        230.15420532226562,
+        466.5848388671875
+      ],
+      "size": [
+        140,
+        26
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 31
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            32
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskToImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 26,
+      "type": "LoadImage",
+      "pos": [
+        179.46469116210938,
+        550.66796875
+      ],
+      "size": [
+        270,
+        314
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            31
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "clipspace/clipspace-mask-1047519.7000000002.png [input]",
+        "image"
+      ]
+    },
+    {
+      "id": 25,
+      "type": "SetEligenArgs",
+      "pos": [
+        197.04940795898438,
+        338.9407958984375
+      ],
+      "size": [
+        356.8287048339844,
+        78
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "IMAGE",
+          "link": 32
+        }
+      ],
+      "outputs": [
+        {
+          "name": "eligen_args",
+          "type": "EligenArgs",
+          "links": [
+            33
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SetEligenArgs"
+      },
+      "widgets_values": [
+        "关注超级面爸微信公众号"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "EligenArgsConcat",
+      "pos": [
+        206.80003356933594,
+        130.04981994628906
+      ],
+      "size": [
+        320.1734313964844,
+        66
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a_eligen_args",
+          "type": "EligenArgs",
+          "link": 15
+        },
+        {
+          "name": "b_eligen_args",
+          "type": "EligenArgs",
+          "link": 19
+        },
+        {
+          "name": "c_eligen_args",
+          "shape": 7,
+          "type": "EligenArgs",
+          "link": 33
+        }
+      ],
+      "outputs": [
+        {
+          "name": "eligen_args",
+          "type": "EligenArgs",
+          "links": [
+            39
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "IMAGE",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EligenArgsConcat"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 32,
+      "type": "EligenArgsConcat",
+      "pos": [
+        1001.5108032226562,
+        668.7228393554688
+      ],
+      "size": [
+        320.1734313964844,
+        66
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a_eligen_args",
+          "type": "EligenArgs",
+          "link": 39
+        },
+        {
+          "name": "b_eligen_args",
+          "type": "EligenArgs",
+          "link": 38
+        },
+        {
+          "name": "c_eligen_args",
+          "shape": 7,
+          "type": "EligenArgs",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "eligen_args",
+          "type": "EligenArgs",
+          "links": [
+            40
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "IMAGE",
+          "links": [
+            41
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "EligenArgsConcat"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 30,
+      "type": "SetEligenArgs",
+      "pos": [
+        582.2453002929688,
+        568.8980712890625
+      ],
+      "size": [
+        356.8287048339844,
+        78
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "IMAGE",
+          "link": 43
+        }
+      ],
+      "outputs": [
+        {
+          "name": "eligen_args",
+          "type": "EligenArgs",
+          "links": [
+            38
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SetEligenArgs"
+      },
+      "widgets_values": [
+        "一个俊俏的男孩"
+      ]
+    },
+    {
+      "id": 31,
+      "type": "LoadImage",
+      "pos": [
+        532.3995361328125,
+        724.9044189453125
+      ],
+      "size": [
+        270,
+        314
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": []
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            42
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "clipspace/clipspace-mask-267698.2000000002.png [input]",
+        "image"
+      ]
+    },
+    {
+      "id": 33,
+      "type": "MaskToImage",
+      "pos": [
+        907.5953369140625,
+        819.6184692382812
+      ],
+      "size": [
+        140,
+        26
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "mask",
+          "type": "MASK",
+          "link": 42
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            43
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MaskToImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 13,
+      "type": "LoadQwenImageDiffSynthiPipe",
+      "pos": [
+        784.2434692382812,
+        22.479694366455078
+      ],
+      "size": [
+        462.4165954589844,
+        130
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "QwenImageDiffSynthiPipe",
+          "links": [
+            11
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadQwenImageDiffSynthiPipe"
+      },
+      "widgets_values": [
+        true,
+        false,
+        "Qwen-Image-EliGen.safetensors",
+        1
+      ]
+    },
+    {
+      "id": 22,
+      "type": "SaveImage",
+      "pos": [
+        1344.6806640625,
+        -114.49324798583984
+      ],
+      "size": [
+        270,
+        270
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 21
+        }
+      ],
+      "outputs": [],
+      "title": "出图效果",
+      "properties": {},
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 16,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        162.3355712890625,
+        -157.67063903808594
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            14
+          ]
+        }
+      ],
+      "title": "正向提示词",
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "一块可以承载设计师天马行空般想象力的自由画布，画布的每个角落都可以落笔生辉。“Eligen自由画布工作流”，“基于Qwen-Image”“关注超级面爸微信公众号”毛笔体，一个俊俏的男孩"
+      ]
+    },
+    {
+      "id": 34,
+      "type": "PrimitiveStringMultiline",
+      "pos": [
+        1464.964599609375,
+        532.2594604492188
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            44
+          ]
+        }
+      ],
+      "title": "负向提示词",
+      "properties": {
+        "Node name for S&R": "PrimitiveStringMultiline"
+      },
+      "widgets_values": [
+        "与画面无关的logo、文字，文字乱码"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "QwenImageRatio2Size",
+      "pos": [
+        783.3076782226562,
+        -127.78539276123047
+      ],
+      "size": [
+        411.2974548339844,
+        78
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            17
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            18
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "QwenImageRatio2Size"
+      },
+      "widgets_values": [
+        "1:1"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "QwenImageDiffSynthSampler",
+      "pos": [
+        785.8281860351562,
+        224.5513916015625
+      ],
+      "size": [
+        452.2720642089844,
+        246
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pipe",
+          "type": "QwenImageDiffSynthiPipe",
+          "link": 11
+        },
+        {
+          "name": "eligen_args",
+          "shape": 7,
+          "type": "EligenArgs",
+          "link": 40
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 14
+        },
+        {
+          "name": "negative_prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "negative_prompt"
+          },
+          "link": 44
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 17
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 18
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            21
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "QwenImageDiffSynthSampler"
+      },
+      "widgets_values": [
+        "",
+        "",
+        982,
+        1664,
+        20,
+        4,
+        1577,
+        "randomize"
+      ]
+    },
+    {
+      "id": 28,
+      "type": "PreviewImage",
+      "pos": [
+        1619.7938232421875,
+        -97.8572998046875
+      ],
+      "size": [
+        277.6253967285156,
+        246
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 41
+        }
+      ],
+      "outputs": [],
+      "title": "控制条件",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    }
+  ],
+  "links": [
+    [
+      11,
+      13,
+      0,
+      11,
+      0,
+      "QwenImageDiffSynthiPipe"
+    ],
+    [
+      14,
+      16,
+      0,
+      11,
+      2,
+      "STRING"
+    ],
+    [
+      15,
+      17,
+      0,
+      15,
+      0,
+      "EligenArgs"
+    ],
+    [
+      17,
+      19,
+      0,
+      11,
+      4,
+      "INT"
+    ],
+    [
+      18,
+      19,
+      1,
+      11,
+      5,
+      "INT"
+    ],
+    [
+      19,
+      20,
+      0,
+      15,
+      1,
+      "EligenArgs"
+    ],
+    [
+      21,
+      11,
+      0,
+      22,
+      0,
+      "IMAGE"
+    ],
+    [
+      22,
+      18,
+      1,
+      23,
+      0,
+      "MASK"
+    ],
+    [
+      23,
+      23,
+      0,
+      17,
+      0,
+      "IMAGE"
+    ],
+    [
+      24,
+      21,
+      1,
+      24,
+      0,
+      "MASK"
+    ],
+    [
+      25,
+      24,
+      0,
+      20,
+      0,
+      "IMAGE"
+    ],
+    [
+      31,
+      26,
+      1,
+      29,
+      0,
+      "MASK"
+    ],
+    [
+      32,
+      29,
+      0,
+      25,
+      0,
+      "IMAGE"
+    ],
+    [
+      33,
+      25,
+      0,
+      15,
+      2,
+      "EligenArgs"
+    ],
+    [
+      38,
+      30,
+      0,
+      32,
+      1,
+      "EligenArgs"
+    ],
+    [
+      39,
+      15,
+      0,
+      32,
+      0,
+      "EligenArgs"
+    ],
+    [
+      40,
+      32,
+      0,
+      11,
+      1,
+      "EligenArgs"
+    ],
+    [
+      41,
+      32,
+      1,
+      28,
+      0,
+      "IMAGE"
+    ],
+    [
+      42,
+      31,
+      1,
+      33,
+      0,
+      "MASK"
+    ],
+    [
+      43,
+      33,
+      0,
+      30,
+      0,
+      "IMAGE"
+    ],
+    [
+      44,
+      34,
+      0,
+      11,
+      3,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9090909090909091,
+      "offset": [
+        -225.10877185936778,
+        217.4665604730255
+      ]
+    },
+    "frontendVersion": "1.23.4"
+  },
+  "version": 0.4
+}
