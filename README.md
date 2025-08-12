@@ -4,7 +4,9 @@ a ComfyyUI custom node for QwenImage [Diffsynth](https://www.modelscope.cn/model
 
 ## Update
 2025.8.11 [Eligen现在8GB显存起用啦！快来让画布每个角落妙笔生花（内附喂饭级制作教程](https://mp.weixin.qq.com/s/2vtdwJ-PLSXnqlE5fVa5Ew)
+
 < img width="1432" height="782" alt="微信图片_20250811111634" src="https://github.com/user-attachments/assets/e16db77b-d386-43da-a296-29bd6bab7707" />
+
 2025.08.10 [更快更强！Eligen现已支持8步lora加速，多蒙版绘制（内附喂饭级制作教程）](https://mp.weixin.qq.com/s/0mVhj1ClAKhQ91QyjouL1w)
 <img width="1432" height="782" alt="微信图片_20250811111634" src="https://github.com/user-attachments/assets/25d254a8-04b5-425f-930e-bb1988fd2cd2" />
 <img width="1562" height="1059" alt="微信图片_20250811111623" src="https://github.com/user-attachments/assets/a8021967-4547-442d-872a-0bca4780f499" />
