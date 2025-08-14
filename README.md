@@ -6,6 +6,8 @@ a ComfyyUI custom node for QwenImage [Diffsynth](https://www.modelscope.cn/model
 
 2025.8.13 [洗图神器！Qwen-Image现已支持Canny，8GB显存起用，8步lora加持14秒出图（内附喂饭级制作教程）](https://mp.weixin.qq.com/s/_ip7qz_-7BrivweTQ9W3SA)
 
+![图片2](https://github.com/user-attachments/assets/a577d2da-385f-4f07-b649-80e1e9140f26)
+
 2025.8.11 [Eligen现在8GB显存起用啦！快来让画布每个角落妙笔生花（内附喂饭级制作教程](https://mp.weixin.qq.com/s/2vtdwJ-PLSXnqlE5fVa5Ew)
 
 ![微信截图_20250812102709](https://github.com/user-attachments/assets/d60fd059-11cd-4eb4-ba98-61de15253997)
