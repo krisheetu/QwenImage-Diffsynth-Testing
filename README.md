@@ -4,10 +4,13 @@ a ComfyyUI custom node for QwenImage [Diffsynth](https://www.modelscope.cn/model
 
 ## Update
 2025.8.15 视频教程 [洗图神器！Qwen-Image图生图之Depth](https://www.bilibili.com/video/BV13gbEz8EKE/)
+
 2025.8.14 [洗图神器！Qwen-Image现已支持Depth，8GB显存起用，8步lora加持14秒出图（内附喂饭级制作教程](https://mp.weixin.qq.com/s/i2wIEyCX7WZK57krS3WL_A)
+
 ![6d89ba2b993fa6ae594350979f5b62203313cccf](https://github.com/user-attachments/assets/2ba4cb6a-4001-4a06-933b-4145b87d8402)
 
 2025.8.14 视频教程 [洗图神器！Qwen-Image图生图之Canny](https://www.bilibili.com/video/BV1bMbqzCEaa/)
+
 2025.8.13 [洗图神器！Qwen-Image现已支持Canny，8GB显存起用，8步lora加持14秒出图（内附喂饭级制作教程）](https://mp.weixin.qq.com/s/_ip7qz_-7BrivweTQ9W3SA)
 
 ![图片2](https://github.com/user-attachments/assets/a577d2da-385f-4f07-b649-80e1e9140f26)
