@@ -3,6 +3,9 @@ a ComfyyUI custom node for QwenImage [Diffsynth](https://www.modelscope.cn/model
 <img width="1432" height="782" alt="微信图片_20250808194829" src="https://github.com/user-attachments/assets/a596aef9-23a5-4af3-a3d9-a3ad374f0bbe" />
 
 ## Update
+2025.8.21 [洗图神器！Qwen-Image 六合一图像结构控制模型，8GB显存可用（内附喂饭级制作教程](https://mp.weixin.qq.com/s/14LH9W4NhEtxP3rfd8nNmw)
+![图片7](https://github.com/user-attachments/assets/6fd809a9-df5e-45c9-a8eb-3f118b0bdd6d)
+
 2025.8.18 [局部重绘！Qwen-Image现已支持Inpaint，8GB显存起用，8步lora加持14秒出图（内附喂饭级制作教程）](https://mp.weixin.qq.com/s/jBZ3ZqGSI92FcR0v4Bpp_A)
 ![图片1](https://github.com/user-attachments/assets/23a99a88-cdc6-48b9-b541-201988dc97d4)
 
