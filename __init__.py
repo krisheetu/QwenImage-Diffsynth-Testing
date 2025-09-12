@@ -53,35 +53,24 @@ class LoadQwenImageDiffSynthiPipe:
     CATEGORY = "AIFSH/QwenImageDiffSynth"
 
     def load_pipe(self,offload,fp8_quantization,lora=None,lora_alpha=1.0):
-        pipe = QwenImagePipeline.from_pretrained(
-            torch_dtype=torch.bfloat16,
+        # Create ModelManager first - this is where LoRA gets loaded
+        from diffsynth import ModelManager
+        
+        model_manager = ModelManager(
+            torch_dtype=torch.bfloat16, 
             device="cuda",
-            model_configs=[
-                ModelConfig(model_id=self.pipe_path,
-                            offload_device="cpu" if offload else None,
-                            offload_dtype=torch.float8_e4m3fn if fp8_quantization else None,
-                            origin_file_pattern="transformer/diffusion_pytorch_model*.safetensors",
-                            skip_download=True),
-                ModelConfig(model_id=self.pipe_path,
-                            offload_device="cpu" if offload else None,
-                            offload_dtype=torch.float8_e4m3fn if fp8_quantization else None,
-                            origin_file_pattern="text_encoder/model*.safetensors",
-                            skip_download=True),
-                ModelConfig(model_id=self.pipe_path,
-                            offload_device="cpu" if offload else None,
-                            offload_dtype=torch.float8_e4m3fn if fp8_quantization else None,
-                            origin_file_pattern="vae/diffusion_pytorch_model.safetensors",
-                            skip_download=True),
-            ],
-            tokenizer_config=ModelConfig(model_id=self.pipe_path, origin_file_pattern="tokenizer/",
-                                         skip_download=True),
+            model_id_list=[self.pipe_path]
         )
+        
+        # Load LoRA on the ModelManager (not the pipeline!)
         if lora is not None:
-            pipe.load_lora(pipe.dit,
-                           path=folder_paths.get_full_path_or_raise("loras",lora),
-                           alpha=lora_alpha)
+            lora_path = folder_paths.get_full_path_or_raise("loras", lora)
+            model_manager.load_lora(lora_path, lora_alpha=lora_alpha)
+        
+        # Create pipeline from ModelManager
+        pipe = QwenImagePipeline.from_model_manager(model_manager)
+        
         pipe.enable_vram_management()
-
         return (pipe, )
 
 class SetEligenArgs:
